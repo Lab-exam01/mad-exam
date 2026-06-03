@@ -1,0 +1,4 @@
+<uses-permission android:name="android.permission.SEND_SMS"/> 
+
+
+put this line in AndroidManifest.xml file before application line

@@ -1,0 +1,19 @@
+public class MainActivity extends AppCompatActivity { 
+private static final int SPLASH_SCREEN_TIME_OUT = 2000; 
+@Override 
+protected void onCreate(Bundle savedInstanceState) { 
+super.onCreate(savedInstanceState); 
+EdgeToEdge.enable(this); 
+setContentView(R.layout.activity_main);        
+getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, 
+WindowManager.LayoutParams.FLAG_FULLSCREEN); 
+new Handler().postDelayed(new Runnable() { 
+@Override 
+public void run() { 
+Intent i = new Intent(MainActivity.this, mainscreen.class); 
+startActivity(i); 
+finish(); 
+} 
+}, SPLASH_SCREEN_TIME_OUT); 
+} 
+}

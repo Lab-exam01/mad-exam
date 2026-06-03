@@ -1,0 +1,2 @@
+Click App→Java→right-click com.example.dbexample→New→Java Class. Enter the 
+class name “DBhelper” 
